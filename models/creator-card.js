@@ -33,18 +33,15 @@ const schemaConfig = {
     of: { title: { type: SchemaTypes.String }, url: { type: SchemaTypes.String } },
   },
   service_rates: {
-    type: SchemaTypes.Array,
-    default: [],
-    of: {
-      currency: { type: SchemaTypes.String },
-      rates: {
-        type: SchemaTypes.Array,
-        default: [],
-        of: {
-          name: { type: SchemaTypes.String },
-          amount: { type: SchemaTypes.Number },
-          description: { type: SchemaTypes.String },
-        },
+    type: SchemaTypes.Object,
+    currency: { type: SchemaTypes.String },
+    rates: {
+      type: SchemaTypes.Array,
+      default: [],
+      of: {
+        name: { type: SchemaTypes.String },
+        amount: { type: SchemaTypes.Number },
+        description: { type: SchemaTypes.String },
       },
     },
   },

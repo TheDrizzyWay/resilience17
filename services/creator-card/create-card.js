@@ -92,7 +92,7 @@ function generateSlug(input) {
   return slug;
 }
 
-const spec = `root {
+const spec = `root { // validation spec for creating a creator card
   title string<trim|lengthBetween:3,100>
   description? string<trim|maxLength:500>
   slug? string<trim|lowercase|lengthBetween:5,50>
