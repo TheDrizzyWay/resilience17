@@ -27,9 +27,8 @@ CreateCreatorCardRequest {
   response.ok {
     http.code 200
     status successful
-    message "Creator card created successfully"
+    message "Creator card created successfully."
     data {
-      creator_card {
         id string
         title string
         description? string
@@ -52,7 +51,6 @@ CreateCreatorCardRequest {
         access_code? string
         created number
         updated number
-      }
     }
   }
   

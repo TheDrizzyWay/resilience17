@@ -7,7 +7,7 @@ const transformDocument = require('@app/services/utility/transform-document');
 
 const spec = `root {
   slug string<trim|lowercase|lengthBetween:5,50>
-  creator_reference? string<trim|length:20>
+  creator_reference string<trim|length:20>
 }`;
 
 const parsedSpec = validator.parse(spec);
